@@ -1,0 +1,6 @@
+framework module Pods_SPWebRTC_Tests {
+  umbrella header "Pods-SPWebRTC_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -4,12 +4,12 @@
 #
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+# pod trunk push SPWebRTC.podspec --allow-warnings --verbose
 
 Pod::Spec.new do |s|
   s.name             = 'SPWebRTC'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SPWebRTC.'
+  s.version          = '0.3.0.2'
+  s.summary          = 'SPAP WebRTC SDK for iOS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,13 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SPWebRTC/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SPWebRTC' => ['SPWebRTC/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+	s.source_files = 'WebRTC/**/*.h'
+	s.public_header_files = "WebRTC/WebRTC.framework/Headers/**/*.h"
+	s.vendored_frameworks = "WebRTC/WebRTC.framework"
+	
 end

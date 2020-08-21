@@ -1,0 +1,6 @@
+framework module SPWebRTC {
+  umbrella header "SPWebRTC-umbrella.h"
+
+  export *
+  module * { export * }
+}
